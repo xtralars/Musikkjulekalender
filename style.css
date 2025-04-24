@@ -1,0 +1,56 @@
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex; /* Enable Flexbox for the body */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    min-height: 100vh; /* Ensure the body takes up at least the full viewport height */
+}
+
+h1 {
+    color: #2c3e50;
+    text-align: center; /* Center the header text */
+    margin-bottom: 20px; /* Add some space below the header */
+}
+
+#container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    
+    display: flex; /* Enable Flexbox for the container */
+    flex-direction: column; /* Stack items vertically (header above buttons) */
+    align-items: center; /* Center items horizontally within the container */
+}
+
+#card-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    justify-content: space-around; /* Distribute space evenly between items */
+    align-items: center; /* Center items vertically within the container */
+    width: 100%; /* Make the container take full width of its parent */
+}
+
+.front-card {
+    background-color: white;
+    border-radius: 10px;
+    
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center; /* Center text horizontally inside the button */
+    align-items: center; /* Center text vertically inside the button */
+    margin: 10px; /* Add some spacing between the buttons */
+    height: 150px; /* Adjust height as needed */
+    width: 150px; /* Make it a square */
+    text-align: center;
+    font-weight: bold; /* Make the text a bit bolder */
+    color: #333; /* Set a default text color */
+    text-decoration: none; /* Remove underlines from links */
+}
+
+.front-card:hover {
+    background-color: #ddd; /* Add a slight hover effect */
+}
